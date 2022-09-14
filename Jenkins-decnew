@@ -24,7 +24,7 @@ pipeline{
                     
                     ssh root@172.31.36.148 /usr/share/tomcat9/bin/shutdown.sh
                     
-                    ssh root@172.31.36.148 /usr/share/tomcat9/bin/startup.sh
+                    ssh root@172.31.36.148 /usr/share/tomcat9/bin/startup.s
                 
                 """
             }
