@@ -23,7 +23,7 @@ pipeline{
                 sh """
                     sh scp -oStrictHostKeyChecking=no target/myweb.war  /usr/share/tomcat9/webapps/
                     ssh root@172.31.36.148 /usr/share/tomcat9/bin/shutdown.sh
-                    ssh "rootr@172.31.36.148 /usr/share/tomcat9/bin/startup.sh
+                    ssh rootr@172.31.36.148 /usr/share/tomcat9/bin/startup.sh
                     
                    """
             }
