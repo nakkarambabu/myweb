@@ -19,7 +19,7 @@ pipeline{
         }
         stage("deploy-dev"){
             steps{
-                sshagent(['tomcat-new']) {
+                sshagent(['sshkey']) {
                 sh """
                     scp -o StrictHostKeyChecking=no target/myweb.war  /usr/share/tomcat9/webapps/
                     ssh root@172.31.36.148 /usr/share/tomcat9/bin/shutdown.sh
